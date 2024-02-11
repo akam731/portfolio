@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+*
+{
+  font-family: "Varela round";
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header_nav{
+  position: fixed;
+  z-index: 1;
+  transition: all 0.5s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  background: #FDFDFD;
+  -webkit-box-shadow: 0px 6px 19px -7px rgba(0,0,0,0.4); 
+  box-shadow: 0px 6px 19px -7px rgba(0,0,0,0.4);
+  color: #000;
+  text-decoration: none;
+}
+
+.header_nav_logo{
+  height: 50px;
+  width: 50px;
+  margin: 0 44px 0 20px;
+}
+
+.header_nav_a{
+  margin: auto;
+}
+
+.header_nav_a a{
+  margin: 0 20px 0 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.header_nav_a a:hover {
+  color: #7883DA;
+  font-size: 22px;
+}
+
+.header_nav_tools{
+  margin: 0 50px 0  0 ;
+  display: flex;
+}
+
+.header_nav_tools_color{
+  height: 22px;
+  width: 22px;
+  margin: 0 10px 0 0;
+}
+.header_nav_tools_language{
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+}
+
+.menu{
+  display: none;
+}  
+
+.header_nav_tools_responsive{
+  display: none;
+}
+
+
+@media screen and (max-width: 900px){
+  .header_nav_a a{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px){
+
+  .header_nav_tools{
+    display: none;
+  }
+
+  .menu {
+    z-index: 999999;
+  display: block;
+  --s: 24px;
+  --c: black;
+  
+  height: var(--s);
+  aspect-ratio: 1;
+  border: none;
+  padding: 0;
+  border-inline: calc(var(--s)/2) solid #0000; 
+  box-sizing: content-box;
+  --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) 
+         no-repeat content-box border-box;
+  --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
+         repeat-y content-box border-box;
+  background: 
+    var(--_g2) left  var(--_p,0px) top,
+    var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
+    var(--_g2) right var(--_p,0px) top,
+    var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
+  background-size: 
+    20% 80%,
+    40% 100%;
+  position: relative;
+  clip-path: inset(0 25%);
+  -webkit-mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000);
+  cursor: pointer;
+  transition: 
+    background-position .3s var(--_s,.3s), 
+    clip-path 0s var(--_s,.6s);
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  }
+  .menu:before,
+  .menu:after {
+    content:"";
+    position: absolute;
+    border-radius: var(--s);
+    inset: 40% 0;
+    background: var(--c);
+    transition: transform .3s calc(.3s - var(--_s,.3s));
+  }
+
+  .menu:checked {
+    clip-path: inset(0);
+    --_p: calc(-1*var(--s));
+    --_s: 0s;
+  }
+  .menu:checked:before {
+    transform: rotate(45deg);
+  }
+  .menu:checked:after {
+    transform: rotate(-45deg);
+  }
+  .menu:focus-visible {
+    clip-path: none;
+    -webkit-mask: none;
+    border: none;
+    outline: 2px solid var(--c);
+    outline-offset: 5px;
+  }
+
+  .nav_logo_hidden{
+    display: none;
+  }
+
+  .header_nav_tools_responsive{
+   display: flex;
+   margin: auto;
+   text-align: center;
+  }
+
+  .header_nav_tools_responsive a:hover {
+    color: #7883DA;
+    font-size: 24px;
+  }
+
+  .header_nav_a{
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    background: #FDFDFD;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    /* transition: all 0.5s ease-out; */
+    max-height: 0;
+    height: 700px;
+    text-align: center;
+  }
+
+  .header_nav_a a{
+    margin: 15px 0 15px 0;
+    font-size: 22px;
+  }
+
+  .menu:checked + .header_nav_a {
+    height: 100vh;
+  }
+
+  .nav_displayed{
+    height: 100vh;
+  }
+
+}
+
+@media screen and (min-width: 1650px)
+{
+
+  .header_nav_a a{
+    font-size: 24px;
+  }
+
+  .header_nav_a a:hover {
+    font-size: 26px;
+  }
+
+  .header_nav_tools{
+  margin: 0 50px 0  0 ;
+  display: flex;
+  }
+
+  .header_nav_tools_color, .header_nav_tools_language{
+    height: 30px;
+    width: 30px;
+  }
+
+}

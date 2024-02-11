@@ -1,0 +1,118 @@
+:root {
+  --background-dark: #272727; /* Couleur de fond sombre */
+  --nav-background-dark: #363636; /* Couleur de fond sombre */
+  --text-dark: #FFFFFF; /* Couleur du texte dans le mode sombre */
+  --description-dark: #C3CAD5; /* Couleur des descriptions dans le mode sombre */
+  --bg-profil-dark: #29313E; /* Couleur du fond du profil dans le mode sombre */
+  --shadow-dark: rgba(0, 0, 0, 0.4); /* Ombre sombre */
+  --accent-dark: #7883DA; /* Couleur d'accent sombre */
+  --orange-dark: #FA8C1B;
+}
+
+#second_center, #third_center,.about_contact .about_contact_link:hover
+{
+  background: var(--background-dark);
+}
+
+.index_title_left .title, .index_title_left .title span,.about_text h2,.about_change h3
+{
+  color: var(--text-dark);
+}
+
+.index_title_right, .about_img img
+{
+  background: var(--bg-profil-dark);
+}
+
+.title_description, .about_change p, .about_contact p
+{
+  color: var(--description-dark);
+}
+
+.thin_border
+{
+  background: var(--text-dark);
+}
+
+.title_status
+{
+  border-top: 1px solid var(--description-dark);
+}
+
+.status_model
+{
+  background: var(--orange-dark);
+}
+
+.scroller span{
+  background: var(--text-dark);
+}
+
+.about_contact .about_contact_link
+{  
+  background: var(--orange-dark);
+  border: 1px solid var(--orange-dark);
+  color: #fff;
+}
+
+.about_contact .about_contact_link:hover
+{
+  color: var(--orange-dark);
+}
+
+.about_contact p .about_contact_portfolio
+{
+  border: 2px solid var(--background-dark);
+  border-bottom: 2px solid #A5ABF0;
+}
+
+.about_contact_logo
+{
+  margin: 0 5px 0 5px;
+  background: transparent;
+  color: var(--orange-dark);
+  border: 1px solid var(--orange-dark);
+}
+
+.about_contact_logo::before 
+{
+  background: var(--orange-dark);
+}
+
+#slideshow .slider 
+{
+  background: #2D343F;
+}
+
+
+.contact_form button
+{
+  background: var(--orange-dark);
+}
+
+.contact_form button:hover
+{
+  background: #653B10;
+}
+
+.contact_text, .portfolio_layer article p
+{
+  color: var(--description-dark);
+}
+
+.contact_form input, .contact_form textarea
+{
+  background: #545454;
+  border: 2px solid #545454;
+  color: var(--description-dark);
+}
+
+.portfolio h2
+{
+  color: #fff;
+}
+
+.about_contact_hidden
+{
+  background: #4D4D4D;
+}

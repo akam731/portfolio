@@ -1,0 +1,36 @@
+:root {
+  --background-dark: #272727; /* Couleur de fond sombre */
+  --nav-background-dark: #363636; /* Couleur de fond sombre */
+  --text-dark: #FFFFFF; /* Couleur du texte dans le mode sombre */
+  --shadow-dark: rgba(0, 0, 0, 0.4); /* Ombre sombre */
+  --accent-dark: #7883DA; /* Couleur d'accent sombre */
+}
+
+body {
+  background: var(--background-dark);
+}
+
+.header_nav {
+  background: var(--nav-background-dark);
+  box-shadow: 0px 6px 19px -7px var(--shadow-dark);
+  color: var(--text-dark);
+}
+
+.header_nav_a a {
+  color: var(--text-dark);
+}
+
+.header_nav_a a:hover {
+  color: var(--accent-dark);
+}
+
+.menu
+{
+  --c : #fff;
+}
+
+@media screen and (max-width: 700px){
+
+  .header_nav_a{
+  background: var(--nav-background-dark);
+}

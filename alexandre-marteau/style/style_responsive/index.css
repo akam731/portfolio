@@ -1,0 +1,480 @@
+
+@media screen and (max-width: 1400px)
+{
+
+  .index_title_left .title, .index_title_left .title span
+  {
+    font-size: 60px;
+  }  
+
+  .index_title_left .title, .index_title_left .title span:last-child
+  {
+    font-size: 55px;
+  }
+
+  .index_title
+  {
+    height: 400px;
+  }
+
+  .index_title_right
+  {
+    width: 400px;
+    height: 400px;
+  }
+
+}
+
+@media screen and (max-width: 1350px)
+{
+  .about_change{
+    height: 320px;
+  }
+
+  .about_img img
+  {
+    height: 530px;
+
+  }
+
+  .about_contact p,  .about_change p
+  {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 1250px)
+{
+  .index_title_left
+  {
+    width: 50%;
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px)
+{
+  .contact_content
+  {
+    flex-direction: column;
+  }
+  .contact_text
+  {
+    width: 500px;
+    margin: auto;
+  }
+
+  .contact_form
+  {
+    width: 500px;
+    margin: 0 auto 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 1120px)
+{
+
+  .br_resp_about
+  {
+    display: none;
+  }
+
+  .index_title
+  {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .index_title_left
+  {
+    width: 100%;
+    margin: 0;
+  }
+
+  .title
+  {
+    display: inline-block;
+  }
+
+  .index_title_right
+  {
+    display: none;
+  }
+
+  .title_status, .title_description
+  {
+    width: 90%;
+    margin: 30px auto 0 auto;
+  }
+
+  .thin_border
+  {
+    margin: auto;
+  }
+
+  .header_scroller
+  {
+    margin: 70px 0 0 0;
+  }
+
+
+  .about_content
+  {
+    flex-direction: column;
+  }
+
+  .about_img
+  {
+    width: 100%;
+  }
+
+  .about_img 
+  {
+    display: none;
+  }
+
+  .about_text
+  {
+    width: 90%;
+    margin: auto;
+  }
+
+  .about_change{
+    min-height: 220px;
+    height: auto;
+  }
+
+
+  .portfolio_layer 
+  {
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 1000px)
+{
+  .skills_slider 
+  {
+    height: 700px;
+  }
+
+  .slideshow
+  {
+    flex-direction: column;
+    animation: slider-animation-responsive 15s linear infinite;
+  }
+
+  .slideshow .slider
+  {
+    height: 250px;
+  }
+  
+  .slideshow .slider .slider_logo
+  {
+    height: 50px;
+    width: 50px;
+    margin: 20px 0 0 30px;
+  }
+
+  .slideshow .slider h4
+  {
+    font-size: 27px;
+    margin: 12px 0 0 30px;
+  }
+
+  .slideshow .slider p
+  {
+    font-size: 17px;
+    width: 90%;
+  }
+
+  @keyframes slider-animation-responsive {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(calc(-1400px + 100vw));
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+
+  .slideshow_part
+  {
+    margin: 10px 0 10px 0;
+  }
+
+  .air_reponsive
+  {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 750px)
+{
+
+  .status_model
+  {
+    display: inline-block;
+    padding: 0px 20px 0 20px;
+    margin: 20px 0 0 0;
+    border-radius: 20px;
+    background-color: #ADD8E6;
+    height: 30px;
+    text-align: center;
+  }
+
+  .status_model p
+  {
+    margin: 5px;
+    font-size: 15px;
+  }
+
+
+  .index_title_left .title, .index_title_left .title span
+  {
+    font-size: 50px;
+  }
+  .index_title_left .title, .index_title_left .title span:last-child
+  {
+    font-size: 45px;
+  }
+
+  .index_title_right
+  {
+    width: 350px;
+    height: 350px;
+  }  
+
+  .about_text, .about_change, .about_change p
+  {
+    text-align: center;
+  }
+
+   .about_contact .about_contact_link, .about_contact p
+   {
+    margin: 0 auto 20px auto;
+   }
+
+  .about_contact
+  {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    margin: 40px auto 0 auto;
+  }
+
+  .about_contact
+  {
+    text-align: center;
+    display: block;
+  }
+
+  .about_contact .about_contact_link
+  {
+    display: block;
+  }
+
+  .contact_text p a
+  {
+    position: relative;
+    margin: 0;
+  }
+
+  .about_contact_hidden
+  {
+  position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+  }
+
+}
+
+@media screen and (max-width: 650px)
+{
+   .contact_form, .contact_text{
+      width: 400px;
+   }
+
+  .contact_form input, .contact_form textarea {
+      width: 360px;
+      max-width:360px;
+      min-width: 360px;
+  }
+
+
+  .portfolio_layer article img 
+  {
+    width: 300px;
+    height: 200px;
+  }
+
+}
+
+@media screen and (max-width: 500px)
+{
+
+  .contact_text p a::before
+  {
+    display: none;
+  }  
+
+  .contact_text p a
+  {
+    margin: auto;
+  }
+
+  .index_title_left .title, .index_title_left .title span
+  {
+    font-size: 40px;
+  }
+
+  .index_title_left .title, .index_title_left .title span:last-child
+  {
+    font-size: 35px;
+  }
+
+  .index_title_right
+  {
+    width: 300px;
+    height: 300px;
+  }
+
+  .status_model p span
+  {
+    font-size: 12px;
+  }
+
+  .about_contact
+  {
+    width: 100%;
+  }
+
+  .contact_form, .contact_text{
+    
+    width: 100%;
+    text-align: center;
+
+   }
+  .contact
+  {
+    text-align: center;
+  }
+  .contact_content{
+    margin: 0 10px 0 10px;
+  }
+
+  .contact_form input, .contact_form textarea {
+      width: 300px;
+      max-width:300px;
+      min-width: 300px;
+  }
+
+  .contact_text
+  {
+    text-align: center;
+  }
+
+  .contact_text p a
+  {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 430px)
+{
+  .air_reponsive
+  {
+    display: block;
+  }
+
+  .contact_form input, .contact_form textarea {
+      width: 85%;
+      max-width:85%;
+      min-width: 85%;
+  }
+}
+
+/*  Reponsive grand écran   */
+
+@media screen and (min-width: 1650px)
+{
+
+  .about_contact .about_contact_link
+  {
+      height: 35px;
+      width: 250px;
+      font-size: 20px;
+      padding: 12px 0 0 0;
+  }
+
+  .about_contact_logo
+  {
+    height: 35px;
+    font-size: 20px;
+    padding: 12px 0 0 0;
+  }
+
+
+  .slideshow .slider p
+  {
+    font-size: 20px;
+    font-family: "open sans";
+    margin: 20px 0 0 50px;
+    white-space: normal; 
+  }
+
+  .slideshow .slider {
+  width: 470px;
+  }
+
+  .contact_form,  .contact_text
+  {
+    width: 700px;
+  }
+
+  .contact_form input, .contact_form textarea
+  {
+    width: 700px;
+    min-width: 700px;
+    max-width: 700px;
+    font-size: 18px;
+  }
+
+  .contact_form input
+  {
+    height: 40px;
+  }
+
+  .contact_text p
+  {
+    font-size: 20px;
+  }
+
+  .contact_text h2
+  {
+    font-size: 44px;
+  }
+
+  .contact_form button
+  {
+    width: 220px;
+    height: 50px;
+    border-radius: 50px;
+    transition: all .5s linear;
+  }
+
+  .contact_text p a
+  {
+    align-items: center;
+  }
+
+}

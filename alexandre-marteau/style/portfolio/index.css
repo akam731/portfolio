@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+*
+{
+  font-family: "Varela round";
+  user-select: none;
+  outline: none;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.fade.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about_contact_logo
+{
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E6E6;
+  color: #000;
+  text-decoration: none;
+  height: 30px;
+  width: 120px;
+  text-align: center;
+  padding: 10px 0 0 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease;
+  margin: 0 0 0 15px;
+  border-radius: 10px;
+}
+
+.about_contact_logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
+  transition: left 0.5s ease;
+}
+
+.about_contact_logo_right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 200%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
+  transition: left 0.5s ease;
+}
+
+.about_contact_logo:hover {
+  background: transparent;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.about_contact_logo:hover::before {
+  left: 0;
+}
+
+.about_contact_logo_right:hover::before
+{
+  left: 0;
+} 
+
+
+.index_title
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+}
+
+.index_title_left
+{
+  width: 50%;
+}
+
+.thin_border{
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #1F2429;
+}
+
+.index_title_left .title, .index_title_left .title span
+{
+  font-family: "Space Grotesk";
+  color: black;
+  font-size: 76px;
+  margin: 0;
+  margin: 20px 0 0 0 ;
+}
+
+.index_title_left .title span:last-child
+{
+  font-size: 70px;
+}
+
+
+.title_description
+{
+  margin: 20px 0 20px 0  ;
+  width: 80%;
+  font-size: 18px;
+  color: #403a2f;
+  font-family: "Space Grotesk";
+}
+
+.index_title_right
+{
+	width: 25%;
+	height: 400px;
+}
+
+.scroller
+{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-color: red;
+	margin: 170px 0 0 150px;
+}
+
+.portfolio_desc
+{
+	display: flex;
+	justify-content: center;
+	height: auto;
+}
+
+.details
+{
+
+	width: 20%;
+	height: 100%;
+
+}
+
+.details_bloc
+{
+
+}
+
+.details_bloc h3
+{
+  	font-family: "Space Grotesk";
+	font-weight: bold;
+	font-size: 23px;
+	color: #146479;
+}
+
+.details_bloc p
+{
+  	font-family: "Space Grotesk";
+	margin: 5px 0 5px 0;	
+	font-size: 20px;
+}
+
+.details_bloc button
+{
+  	font-family: "Space Grotesk";
+	font-size: 18px;
+ 	background: transparent;
+ 	border: none;
+ 	border-bottom: 2px solid black;
+ 	color: black; 
+ 	display: block;
+ 	height: 45px;
+ 	transition: all .5s linear;
+ 	margin: 0;
+ 	padding: 0;
+ 	cursor: pointer;
+}
+
+.details_bloc button:hover
+{
+ 	border-bottom: 2px solid #146479;
+}
+
+.details_bloc button:hover .arrow
+{
+  transform: translateX(15px);
+}
+
+.arrow
+{
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform .5s ease-in-out;
+}
+
+.content
+{
+	width: 50%;
+	height: 100%;
+}
+
+.content_bloc
+{
+	margin: 0 0 0 100px;
+}
+
+.content_bloc_title
+{
+  	font-family: "Space Grotesk";
+	font-weight: bold;
+	font-size: 38px;
+	color: #146479;
+}
+
+.content_bloc_subtitle
+{
+  	font-family: "Space Grotesk";
+	font-weight: bold;
+	font-size: 34px;
+	color: #146479;
+}
+
+.desciption
+{
+	font-size: 20px;
+	font-weight: normal;
+	width: 800px;
+}
+
+.liste
+{
+	font-size: 20px;
+	font-weight: normal;
+	width: 800px;
+	margin: 10px 0 10px 60px;
+}

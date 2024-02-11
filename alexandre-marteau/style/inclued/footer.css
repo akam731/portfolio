@@ -1,0 +1,76 @@
+footer
+{
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	border-top: 1px solid #C3CAD5;
+	text-align: center;
+}
+
+.about_contact_logo_portfolio
+{  
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E6E6;
+  color: #000;
+  text-decoration: none;
+  height: 30px;
+  width: 120px;
+  text-align: center;
+  padding: 10px 0 0 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease;
+  margin: 0 0 0 15px;
+  border-radius: 10px;
+}
+
+.about_contact_logo_portfolio::before 
+{
+  content: "";
+  position: absolute;
+  top: 200%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
+  transition: top 0.5s ease;
+}
+
+
+.about_contact_logo_portfolio:hover::before {
+  top: 0;
+}
+
+.about_contact_logo_portfolio:hover {
+  background: transparent;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 450px){
+  .link{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .link a{
+    margin: 10px auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 1650px)
+{
+
+  .about_contact_logo_portfolio
+  {
+    height: 35px;
+    font-size: 20px;
+    padding: 12px 0 0 0;
+  }
+
+}

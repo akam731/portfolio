@@ -1,0 +1,31 @@
+ footer
+ {
+ 	background: #272727;
+ 	color: #fff;
+ }
+ 
+ .about_contact_logo_portfolio{
+ 	margin: 0 5px 0 5px;
+ 	color: #FA8C1B;
+ 	border: 1px solid #FA8C1B;
+ 	background: transparent;
+ }
+
+footer .link .about_contact_logo,{
+ 	color: #FA8C1B;
+ 	border: 1px solid #FA8C1B;
+ 	background: transparent;
+ }
+
+.about_contact_logo_portfolio:hover{
+ 	border: 1px solid #FA8C1B;
+ }
+
+ .about_contact_logo_portfolio::before 
+{
+  background-color: #FA8C1B;
+}
+
+#link_linkedin:hover, #link_mail:hover{
+ 	border: 1px solid #FA8C1B;
+ }
