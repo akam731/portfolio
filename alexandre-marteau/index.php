@@ -9,4 +9,5 @@ if (!isset($_SESSION['color_mode'])) {
 }
 
 header('location: fr/');
+
 ?>

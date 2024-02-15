@@ -1,5 +1,4 @@
 <?php
-
 if (!isset($_SESSION['color_mode'])) {
 	$_SESSION['color_mode'] = "default";
 }
@@ -62,7 +61,7 @@ if (isset($_GET['target']) AND !empty($_GET['target'])) {
 	if ($_SESSION['color_mode'] == "dark") { ?>
 	<link rel="stylesheet" type="text/css" href="../style/inclued/index_dark.css">
 	<link rel="stylesheet" type="text/css" href="../style/inclued/header_dark.css">
-<link rel="stylesheet" type="text/css" href="../style/inclued/footer_dark.css">
+	<link rel="stylesheet" type="text/css" href="../style/inclued/footer_dark.css">
 	<?php } ?>
 	<title>Alexandre Marteau | Portfolio</title>
 </head>
@@ -393,20 +392,21 @@ if (isset($_GET['target']) AND !empty($_GET['target'])) {
 
 				<p><?php lang("Pour toute question que vous auriez, qu'il s'agisse d'un nouveau projet ou d'une opportunité. <br> Je suis à votre disposition !", "For any questions you have, whether it's about a new project or an opportunity. <br> I am at your disposal !"); ?></p>
 
-				<p><?php lang("Vous pouvez utiliser ce formulaire de contact. Ou bien m'envoyer un e-mail à l'adresse :", "You can use this contact form. Or send me an email to:"); ?><a href="">alexandre.marteau63@gmail.com</a></p>
+				<p><?php lang("Vous pouvez utiliser ce formulaire de contact. Ou bien m'envoyer un e-mail à l'adresse :", "You can use this contact form. Or send me an email to:"); ?>
+				<br><a href="">alexandre.marteau63@gmail.com</a></p>
 
 				<p><?php lang("Ma priorité sera de vous répondre aussi rapidement que possible.","My priority will be to respond to you as quickly as possible."); ?></p>
 
 			</div>
 
 
-			<form class="contact_form section fade">
+			<form method="POST" action="../messageForm.php" class="contact_form section fade">
 
 
-				<input id="input_name" type="text" name="name" placeholder="<?php lang("Nom","Name"); ?>" required><br><br>
-				<input id="input_email" type="email" name="mail" placeholder="E-mail" required><br><br>
-				<input id="input_subject" type="text" name="subject" placeholder="<?php lang("Objet","Subject"); ?>" required><br><br>
-				<textarea id="input_message" name="message" placeholder="<?php lang('Votre message', "Your message") ?>" required></textarea><br><br>
+				<input id="input_name" type="text" maxlength="255" name="nom" placeholder="<?php lang("Nom","Name"); ?>" required><br><br>
+				<input id="input_email" type="email" maxlength="320" name="mail" placeholder="E-mail" required><br><br>
+				<input id="input_subject" type="text" maxlength="255" name="subject" placeholder="<?php lang("Objet","Subject"); ?>" required><br><br>
+				<textarea id="input_message" name="message" maxlength="5000" placeholder="<?php lang('Votre message', "Your message") ?>" required></textarea><br><br>
 
 				<button name="send">
 					<?php lang("Envoyer ", "Send ") ?>

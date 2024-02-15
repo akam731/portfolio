@@ -717,7 +717,7 @@ body
   position: fixed;
   z-index: 1;
   transition: all 0.5s ease;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 0;
 }
 
 .contact_text p a::before {
