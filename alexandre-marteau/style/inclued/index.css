@@ -11,6 +11,10 @@
   outline: none;
 }
 
+a, button, input[type=submit]{
+  cursor: pointer;
+}
+
 body
 {
   margin: 0;
@@ -370,6 +374,8 @@ body
 
 .about_contact_hidden 
 {
+  z-index: 3000;
+  width: 700px;
   position: fixed;
   display: none;
   justify-content: space-around;
@@ -384,13 +390,13 @@ body
 }
 
 .cv-option {
-  z-index: 2000;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
-    cursor: pointer;
+  z-index: 3000;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .cv-option:hover {
@@ -414,9 +420,11 @@ body
   border-radius: 50%;
 }
 
-.cv-option p {
+.about_contact_hidden .cv-option p {
   z-index: 2000;
-    color: #666;
+  color: #666;
+  margin: 10px 0 0 0;
+  font-size: 16px;
 }
 
 .cv-option a {
@@ -476,7 +484,7 @@ body
   color: #000;
   text-decoration: none;
   height: 30px;
-  width: 120px;
+  width: 60px;
   text-align: center;
   padding: 10px 0 0 0;
   overflow: hidden;
@@ -485,13 +493,6 @@ body
   transition: all 0.5s ease;
   margin: 0 0 0 15px;
   border-radius: 10px;
-}
-
-.about_contact_logo img 
-{
-  height: 30px;
-  width: 30px;
-  margin: 0;
 }
 
 .about_contact_logo::before {

@@ -1,0 +1,39 @@
+:root {
+  --background-dark: #272727; /* Couleur de fond sombre */
+  --nav-background-dark: #363636; /* Couleur de fond sombre */
+  --text-dark: #FFFFFF; /* Couleur du texte dans le mode sombre */
+  --description-dark: #C3CAD5; /* Couleur des descriptions dans le mode sombre */
+  --bg-profil-dark: #29313E; /* Couleur du fond du profil dans le mode sombre */
+  --shadow-dark: rgba(0, 0, 0, 0.4); /* Ombre sombre */
+  --accent-dark: #7883DA; /* Couleur d'accent sombre */
+  --orange-dark: #FA8C1B;
+}
+.index_title .title{
+  color: var(--text-dark);
+}
+.index_title .title_description{
+  color: var(--description-dark);
+}
+.thin_border{
+  background: var(--description-dark);
+}
+.details_bloc h3, .content_bloc_title, .content_bloc_subtitle{
+  color: var(--text-dark);
+}
+.details_bloc p, .desciption, .liste{
+  color: var(--description-dark);
+}
+.details_bloc button{
+  color: var(--description-dark);
+  border-bottom: 2px solid var(--description-dark);
+}.about_contact_logo
+{
+  background: transparent;
+  color: var(--orange-dark);
+  border: 1px solid var(--orange-dark);
+}
+
+.about_contact_logo::before 
+{
+  background: var(--orange-dark);
+}

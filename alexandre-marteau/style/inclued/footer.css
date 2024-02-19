@@ -1,10 +1,14 @@
 footer
 {
-	width: 100%;
+	width: 100%; 
 	height: 150px;
 	background: #fff;
 	border-top: 1px solid #C3CAD5;
 	text-align: center;
+}
+
+#link_linkedin, #link_mail{
+  margin: 0;
 }
 
 .about_contact_logo_portfolio
@@ -15,14 +19,14 @@ footer
   color: #000;
   text-decoration: none;
   height: 30px;
-  width: 120px;
+  width: 60px;
   text-align: center;
   padding: 10px 0 0 0;
   overflow: hidden;
   position: relative;
   z-index: 1;
   transition: all 0.5s ease;
-  margin: 0 0 0 15px;
+  margin: 0 15px 0 15px;
   border-radius: 10px;
 }
 
@@ -68,9 +72,7 @@ footer
 
   .about_contact_logo_portfolio
   {
-    height: 35px;
-    font-size: 20px;
-    padding: 12px 0 0 0;
+    font-size: 16px;
   }
 
 }

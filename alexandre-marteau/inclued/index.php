@@ -13,9 +13,8 @@ if (isset($_GET['color']) AND $_GET['color'] == "change") {
 	header('location: ../'.$_SESSION['language']."/");
 }
 
-// Condition permettant le changement de couleur du site
+// Condition permettant le changement de langue du site
 if (isset($_GET['language']) AND $_GET['language'] == "change") {
-	echo "zizi";
 	if($_SESSION['language'] == "fr"){
 		$_SESSION['language'] = "en";
 	}else{
@@ -50,6 +49,7 @@ if (isset($_GET['target']) AND !empty($_GET['target'])) {
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://kit.fontawesome.com/7055cf6fe9.js" crossorigin="anonymous"></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../style/inclued/index.css">
@@ -84,7 +84,7 @@ if (isset($_GET['target']) AND !empty($_GET['target'])) {
 
  </script>
 
-	<?php require_once("header.php"); ?>
+	<?php require_once("header/header.php"); ?>
 
 
 	<br>
@@ -181,22 +181,22 @@ if (isset($_GET['target']) AND !empty($_GET['target'])) {
 			    <div class="cv-option" id="standard-cv">
 			        <img src="../images/header/drapeau-france.jpg">
 			        <p><?php lang("Une version française de mon CV", "A French version of my CV") ?></p><br>
-			        <a href="../doc/CV_fr.pdf" download="CV_FR Marteau Alexandre"><?php lang('Télécharger','Download') ?></a>
+			        <a href="../doc/CV_fr.pdf" download="CV_FR Marteau Alexandre"><i class="fa-solid fa-download"></i></a>
 			    </div>
 
 			    <div class="cv-option" id="creative-cv">
 			        <img src="../images/header/united-kingdom-flag.png">
 			        <p><?php lang("Une version anglaise de mon CV", "An English version of my CV") ?></p><br>
-			        <a href="../doc/CV_en.pdf" download="CV_EN Marteau Alexandre" download><?php lang('Télécharger','Download') ?></a>
+			        <a href="../doc/CV_en.pdf" download="CV_EN Marteau Alexandre" download><i class="fa-solid fa-download"></i></a>
 			    </div>
 
 				</div>	
 
 
 
-					<a class="about_contact_logo" href="https://www.linkedin.com/in/alexandre-marteau-45ab0327b/" target="about_blank">LinkedIn</a>
+					<a class="about_contact_logo" href="https://www.linkedin.com/in/alexandre-marteau-45ab0327b/" target="about_blank"><i class="fa-brands fa-linkedin-in"></i></a>
 
-					<a href="mailto:alexandre.marteau63@gmail.com" class="about_contact_logo about_contact_logo_right" id="">E-Mail</a>
+					<a href="mailto:alexandre.marteau63@gmail.com" class="about_contact_logo about_contact_logo_right" id=""><i class="fa-regular fa-envelope"></i></a>
 				</div>
 
 			</div>
@@ -344,22 +344,22 @@ if (isset($_GET['target']) AND !empty($_GET['target'])) {
 
 			<article onclick="redirect('portfolio/?name=enchere');">
 				<img src="../images/index/project/enchere.jpg">
-				<p>Site de vente au enchère</p>
+				<p><?php lang('Site de vente au enchère','Auction site') ?></p>
 			</article>
 
 			<article onclick="redirect('portfolio/?name=portfolio');">
 				<img src="../images/index/project/portfolio.jpg">
-				<p>Mon site Portfolio</p>
+				<p><?php lang("Mon site Portfolio",'My Portfolio site') ?></p>
 			</article>
 
 			<article onclick="redirect('portfolio/?name=elec');">
 				<img src="../images/index/project/dev2.jpeg">
-				<p>Site d'électroménagé reconditioné</p>
+				<p><?php lang('Site d\'électroménagé reconditioné','Refurbished household appliances site') ?></p>
 			</article>
 
 			<article onclick="redirect('portfolio/?name=booki');">
 				<img src="../images/index/project/booki.jpg">
-				<p>Page d'acceuil d'une agence de voyage</p>
+				<p><?php lang("Page d'acceuil d'une agence de voyage","Home page of a travel agency") ?></p>
 			</article>
 		</div>
 
@@ -400,7 +400,7 @@ if (isset($_GET['target']) AND !empty($_GET['target'])) {
 			</div>
 
 
-			<form method="POST" action="../messageForm.php" class="contact_form section fade">
+			<form method="POST" action="../inclued/messageForm.php" class="contact_form section fade">
 
 
 				<input id="input_name" type="text" maxlength="255" name="nom" placeholder="<?php lang("Nom","Name"); ?>" required><br><br>
@@ -433,7 +433,7 @@ if (isset($_GET['target']) AND !empty($_GET['target'])) {
 	<br>
 
 
-	<?php require_once("footer.php"); ?>
+	<?php require_once("footer/footer.php"); ?>
 	
 
 

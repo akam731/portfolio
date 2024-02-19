@@ -99,9 +99,11 @@ var tansMinTouch;
 var tansMaxTouch;
 var tansMin;
 var tansMax;
+var trans;
 var initialX, initialY;
 var slide = document.getElementById("slideshow");
 var mouseDown = false; 
+var mouseOver = false;
 var translateX = 0;
 var translateY = 0;
 var screenWidth = window.innerWidth;
@@ -118,7 +120,13 @@ function handleResize() {
 
 window.addEventListener("resize", handleResize);
 handleResize();
-
+slide.addEventListener("mouseover",function(event) {
+	mouseOver = true;
+});
+slide.addEventListener("mouseout",function(event) {
+	mouseOver = false;
+	mouseDown = false;
+});
 slide.addEventListener("mousedown",function(event) {
 	mouseDown = true;
 	initialX = event.clientX;
@@ -143,12 +151,12 @@ slide.addEventListener("mouseup",function(event) {
 
 document.addEventListener('mousemove', function(event) {
 
-
-	if (mouseDown) {
-	    // Récupère les coordonnées x et y du curseur de la souris
-	    var mouseX = event.clientX;
+	console.log(mouseDown);
+	if (mouseDown && mouseOver) {
+	  // Récupère les coordonnées x et y du curseur de la souris
+	  var mouseX = event.clientX;
 		var mouseY = event.clientY;
-		var trans = translateX - (initialX - mouseX);
+		trans = translateX - (initialX - mouseX);
 		if (trans < tansMin) {
 			trans = tansMin;
 		}
@@ -187,7 +195,7 @@ document.addEventListener('touchmove', function(event) {
 	if (mouseDown) {
 	    // Récupère les coordonnées x et y du curseur de la souris
 	    var mouseX = event.touches[0].clientX;
-		var trans = translateX - (initialX - mouseX) ;
+		 trans = translateX - (initialX - mouseX) ;
 		if (trans < tansMinTouch) {
 			trans = tansMinTouch;
 		}

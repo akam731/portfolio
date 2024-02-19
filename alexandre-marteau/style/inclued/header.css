@@ -47,13 +47,14 @@ body
   margin: 0 20px 0 20px;
   color: #000;
   text-decoration: none;
-  font-size: 20px;
-  transition: all 0.3s ease;
+  font-size: 19px;
+  display: inline-block;
+  transition: all 0.3s linear;
 }
 
 .header_nav_a a:hover {
   color: #7883DA;
-  font-size: 22px;
+  transform: scale(1.2);
 }
 
 .header_nav_tools{
@@ -61,10 +62,10 @@ body
   display: flex;
 }
 
-.header_nav_tools_color{
-  height: 22px;
-  width: 22px;
+.color_mode{
+  font-size: 25px;
   margin: 0 10px 0 0;
+  color: #000;
 }
 .header_nav_tools_language{
   border-radius: 50%;
@@ -205,14 +206,6 @@ body
 @media screen and (min-width: 1650px)
 {
 
-  .header_nav_a a{
-    font-size: 24px;
-  }
-
-  .header_nav_a a:hover {
-    font-size: 26px;
-  }
-
   .header_nav_tools{
   margin: 0 50px 0  0 ;
   display: flex;
@@ -221,6 +214,10 @@ body
   .header_nav_tools_color, .header_nav_tools_language{
     height: 30px;
     width: 30px;
+  }
+
+  .color_mode{
+    font-size: 34px;
   }
 
 }
