@@ -8,7 +8,7 @@
   --accent-dark: #7883DA; /* Couleur d'accent sombre */
   --orange-dark: #FA8C1B;
 }
-.index_title .title{
+.index_title .title, #jbekbfeef{
   color: var(--text-dark);
 }
 .index_title .title_description{

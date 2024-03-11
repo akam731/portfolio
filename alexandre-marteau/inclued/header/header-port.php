@@ -14,10 +14,10 @@
 
 
     	if ($_SESSION['color_mode'] == "default") {
-    		echo "logo.png"; 
+    		echo "logo_icon.png"; 
 
     	}else{
-    		echo "logo_dark.png"; 
+    		echo "logo_icon_dark.png"; 
     	} ?>"class="header_nav_logo">
 
   	<div id="header_nav_a" class="header_nav_a nav_hidden">

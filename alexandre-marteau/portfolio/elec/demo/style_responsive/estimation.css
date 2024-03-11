@@ -1,0 +1,142 @@
+@media screen and (max-width: 1000px){
+	.header_logo{
+		margin-left: 70px;
+	}
+
+	.header_back{
+		margin-right: 70px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.form_content{
+		width: 450px;
+	}
+
+	.form_select, .input_color, .checkbox_1, .checkbox_flex{
+		width: 493px;
+	}
+
+	.checkbox_2{
+		width: 230px;
+	}
+
+	.checkbox_3{
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.header_logo{
+		margin-left: 20px;
+	}
+
+	.header_back{
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 570px){
+
+	.header_logo{
+		font-size: 30px;
+	}
+
+	.header_title{
+		font-size: 16px;
+	}
+
+	.form_content{
+		width: 350px;
+	}
+
+	.form_select, .input_color, .checkbox_1, .checkbox_flex{
+		width: 393px;
+	}
+
+	.checkbox_2{
+		width: 190px;
+	}
+
+	.checkbox_3{
+		width: 120px;
+	}
+
+	.check_content{
+		font-size: 13px;
+		width: 70px;
+	}
+
+}
+
+@media screen and (max-width: 450px){
+
+	.header_title{
+		text-align: center;
+	}
+
+	.header_logo{
+		display: none;
+	}
+
+	.form_content{
+		width: 310px;
+	}
+
+	.form_select, .input_color, .checkbox_1, .checkbox_flex, .textarea_form, .input_text{
+		width: 305px;
+		min-width: 305px;
+		max-width: 305px;
+	}
+
+	.textarea_form{
+		padding: 5px 5px 0 5px;
+	}
+
+	.input_text{
+		padding: 0 5px 0 5px;
+	}
+
+	.checkbox_2{
+		width: 140px;
+	}
+
+	.checkbox_3{
+		width: 120px;
+	}
+
+	.check_content{
+		width: 70px;
+	}
+
+	.check_1{
+		margin-left: 10px;
+	}
+
+	.checkbox_grid{
+		width: 305px;
+		display: grid;
+		grid-template-columns: 1fr 20px 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	._3_1{
+		width: 100%;
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+	}
+	._3_2{
+		width: 100%;
+		grid-column-start: 3;
+		grid-column-end: 3;
+		grid-row-start: 1;
+	}
+	._3_3{
+		width: 100%;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 2;
+	}
+
+}

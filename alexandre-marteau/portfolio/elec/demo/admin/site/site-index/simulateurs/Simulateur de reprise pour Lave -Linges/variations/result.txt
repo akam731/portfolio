@@ -1,0 +1,6 @@
+Voici votre résultat
+Vous pouvez maintenant demander une validation de vos résultats !
+true
+euros
+none
+fin

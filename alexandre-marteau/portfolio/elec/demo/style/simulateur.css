@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	font-family: 'open sans';
+}
+
+body{
+	margin: 0;
+	background-color: #F9F9F9;
+}
+
+header{
+	background: #fff;
+	border-bottom:  1px solid #D5D5D5;
+	padding-bottom: 20px;
+}
+
+.slideshow-container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 300px; /* ajuster la hauteur à votre convenance */
+}
+
+
+.slideshow {
+	display: flex;
+	position: absolute;
+	animation: slideshow-animation 20s linear infinite;
+}
+
+.slideshow img {
+	cursor: pointer;
+	width: 355px;
+	height: 200px;
+	margin-right: 40px;
+}
+
+
+@keyframes slideshow-animation {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-800px);
+	}
+}
+
+.object_select{
+	margin-top: 0;
+	width: 80%;
+	height: auto;
+	min-height: 550px;
+	background: transparent;
+	margin: auto;
+}
+
+.object_select h1{
+	text-align: center;
+	margin: auto;
+	color: #3E416D;
+	font-size: 30px;
+	font-family: "varela round";
+}
+
+.object_select h3{
+	text-align: center;
+	color: #29303B;
+	font-family: "varela round";
+}
+
+.object_select .object_select_flex{
+	display: grid;
+	grid-template-columns: 40% 40%;
+	height: auto;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.object_select_washing{
+	text-decoration: none;
+	display: block;
+	height: 95%;
+	width: 100%;
+	margin: 20px 0 20px 0;
+	background: #fff;
+	transition: all 0.3s ease-out;
+	-webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.31); 
+	box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.31);
+}
+
+.object_select_washing img{
+	height: 250px;
+	display: block;
+	margin: auto;
+}
+
+.object_select_washing .p_title{
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #29303B;
+	font-family: "varela round";
+}
+
+.object_select_washing .p_price{
+	font-size: 15px;
+	text-align: center;
+	color: black;
+	font-family: "varela round";
+}
+
+.object_select_washing:hover, .object_select_soon:hover{
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.31); 
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.31);
+}
+
+.object_select_soon{
+	margin-top: 20px;
+	text-decoration: none;
+	display: block;
+	height: 95%;
+	width: 100%;
+	background: #fff;
+	transition: all 0.3s ease-out;
+	-webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.31); 
+	box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.31);
+}
+
+.object_select_soon img{
+	height: 200px;
+	display: block;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.object_select_soon p{
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 1px;
+	display: block;
+	margin: auto;
+	width: 80%;
+	color: #29303B;
+	margin-top: 30px;
+	font-family: "varela round";
+}
+
+.detail{
+	background: #E8F1D6;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 290px;
+}
+
+.detail div{
+	margin-top: 70px;
+	text-align: center;
+}
+
+.detail div img{
+	height: 50px;
+}
+
+.detail div p{
+	width: 200px;
+}
+
+#cadenas-b, #carton-b, #cadie-b, #chat-b, #camion-b{
+	display: none;
+}
+
+.question_title{
+	text-align: center;
+	color: #3E416D;
+	font-family: "varela round";
+	font-size: 27px;
+}
+
+.a_boutique{
+	text-decoration: none;
+}
+
+.simu_text{
+	height: 300px;
+	width: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.simu_text img{
+	height: 350px;
+	width: 450px;
+	object-fit: cover;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.31); 
+	box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.31);
+}
+
+.simu_text div{
+	width: 500px;
+	margin: 50px;
+	margin-top: 15px
+}
+
+.simu_text div h3{
+	color: #3E416D;
+	font-size: 25px;
+	font-family: "varela round";
+}

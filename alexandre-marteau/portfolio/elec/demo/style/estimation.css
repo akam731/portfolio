@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	font-family: "varela round";
+	user-select: none;
+}
+
+body{
+	margin: 0;
+}
+
+.header{
+	display: flex;
+	height: 70px;
+	width: 100%;
+	border-bottom:  1px solid #D5D5D5;
+	background-color: #fff;
+}
+
+.header_logo{
+	margin-left: 250px;
+	font-family: 'Lobster';
+	font-size: 35px;
+	text-decoration: underline;
+	color: #CACACA;
+	margin-top: 10px;
+}
+
+.header_title{
+	font-family: "varela round";
+	font-size: 21px;
+	margin-left: 30px;
+	margin-top: 24.5px;
+}
+
+.header_back, .header_back:active{
+	margin-top: 15px;
+	display: block;
+	height: 20px;
+	padding: 10px;
+	font-family: "varela round";
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: 200px;
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s ease-out;
+}
+
+.header_back:hover{
+	background-color: black;
+	color: #fff;
+}
+
+.simu_title{
+	text-align: center;
+	color: #3E416D;
+}
+
+.simu_subtitle{
+	text-align: center;
+	color: #29303B;
+}
+
+.simu_form{
+	width: 100%;
+	height: auto;
+}
+
+.form_content{
+	height: auto;
+	width: 550px;
+	margin: auto;
+}
+
+.label{
+	display: inline-block;
+	height: 30px;
+	font-size: 20px;
+}
+
+.require{
+	display: inline-block;
+	height: 30px;
+}
+
+.input_text{
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	border: 0.1rem solid #00a9e0;
+	height: 50px;
+	border-radius: 0.4rem;
+	margin-bottom: 20px;
+	padding: 0 20px 0 20px;
+	font-size: 20px;
+}
+
+.textarea_form{
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 100px;
+	border: 0.1rem solid #00a9e0;
+	height: 50px;
+	border-radius: 0.4rem;
+	margin-bottom: 20px;
+	padding: 20px 20px 0 20px;
+	font-size: 20px;
+}
+
+.form_select{
+	display: block;
+	width: 593.2px;
+	border: 0.1rem solid #00a9e0;
+	height: 50px;
+	border-radius: 0.4rem;
+	margin-bottom: 20px;
+	padding: 0 20px 0 20px;
+	font-size: 20px;
+}
+
+.input_color{
+	display: block;
+	width: 593.2px;
+	border: 0.1rem solid #00a9e0;
+	height: 50px;
+	border-radius: 0.4rem;
+	margin-bottom: 20px;
+}
+
+.checkbox_flex{
+	display: flex;
+	justify-content: space-between;
+	width: 593.2px;
+}
+
+.checkbox_1{
+	width: 593.2px;
+	border: 0.1rem solid #00a9e0;
+	height: 50px;
+	border-radius: 0.4rem;
+	margin-bottom: 20px;
+	display: flex;
+	cursor: pointer;
+}
+
+.checkbox_2{
+	width: 280px;
+	border: 0.1rem solid #00a9e0;
+	height: 50px;
+	border-radius: 0.4rem;
+	margin-bottom: 20px;
+	display: flex;
+	cursor: pointer;
+}
+
+.checkbox_3{
+	width: 180px;
+	border: 0.1rem solid #00a9e0;
+	height: 50px;
+	border-radius: 0.4rem;
+	margin-bottom: 20px;
+	display: flex;
+	cursor: pointer;
+}
+
+.check_1{
+	display: block;
+	height: 30px;
+	width: 30px;
+	margin-left: 50px;
+	margin-top: 10px;
+	border-radius: 50%;
+	border: 0.1rem solid #00a9e0;
+	background-color: #fff;
+}
+
+.check_3{
+	display: block;
+	height: 30px;
+	width: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 50%;
+	border: 0.1rem solid #00a9e0;
+	background-color: #fff;
+}
+
+.checkboc{
+	display: block;
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+	margin-left: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.check_content{
+	display: block;
+	margin:auto;
+}
+
+.checked{
+	background-color: #00a9e0;
+}
+
+.valider{
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	color: #fff;
+	height: 50px;
+	background: #00a9e0;
+	cursor: pointer;
+	border: 1px solid #00a9e0;
+}
+
+.valider:hover{
+	color: #00a9e0;
+	background: #fff;
+}
+
+.error{
+	color: red;
+	text-align: center;
+}

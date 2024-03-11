@@ -1,0 +1,46 @@
+header{
+   user-select: none;
+   padding-top: 15px;
+   width: 100%;
+}
+
+.toggle{
+   display: none;
+}
+
+header img{
+   border-radius: 50%;
+   height: 118px;
+   display: block;
+   margin: auto;
+}
+
+.reprise_2{
+   display: none;
+}
+
+.nav{
+   margin-top: 20px;
+   text-align: center;
+}
+
+.nav .a{
+   font-size: 18px;
+   margin: 30px;
+   color: black;
+   text-decoration: none;
+   transition: all 0.3s;
+}
+
+.select{
+   font-size: 18px;
+   padding-bottom: 5px;
+   border-bottom: 1px solid #12ABB9;
+   margin: 30px;
+   color: #12ABB9;
+   text-decoration: none;
+}
+
+.nav .a:hover{
+   color: #12ABB9;
+}

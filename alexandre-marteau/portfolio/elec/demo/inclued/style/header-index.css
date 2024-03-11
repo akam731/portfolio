@@ -1,0 +1,141 @@
+ * {
+   font-family: 'varela round';
+ }
+
+ .header{
+  user-select: none;
+  top: 0;
+  display: grid;
+  width: 100%;
+  height: 45px;
+  grid-template-columns: 1fr  1fr 1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr 1fr;
+  grid-template-rows: 30px 40px;
+  position: fixed; 
+  transition: top 0.3s;
+  transition-delay: 0.2s;
+  z-index: 9;
+}
+
+#header.remonte {
+ top: -80px;
+}
+
+.nav_logo{
+  user-select: none;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  font-family: 'Lobster';
+  font-size: 35px;
+  text-decoration: underline;
+  color: #CACACA;
+}
+
+.navbar{
+  user-select: none;
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 100%;
+  width: 650px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  background: #fff;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  -webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.67); 
+  box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.67);
+}
+
+.navbar_bottom{
+  user-select: none;
+  display: none;
+}
+
+.navbar a{
+  user-select: none;
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 30px  1fr;
+  grid-template-rows: 1fr;
+  color: #363636;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+ color: #782CC3;
+}
+
+.nav_icon{
+  user-select: none;
+  height: 20px;
+  width: 20px;
+}
+
+.nav_id{
+  user-select: none;
+  grid-column-start: 12;
+  grid-column-end: 12;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  background: #fff;
+  width: 160px;
+  height: 46px;
+  padding-left: 20px;
+  -webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.67); 
+  box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.67);
+}
+
+.nav_id a{
+  user-select: none;
+  display: grid;
+  grid-template-columns: 30px  1fr;
+  grid-template-rows: 1fr;
+  font-size: 16px;
+  color: #363636;
+  text-decoration: none;
+}
+
+.nav_id a .conec{
+  user-select: none;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+.nav_id a .prof{
+  user-select: none;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.nav_id a:hover{
+  color: #782CC3;
+}
+
+
+#argent-b, #molette-b, #laver-b, #int-b, #uti-b{
+  user-select: none;
+  display: none;
+}
+
+.border{
+  user-select: none;
+  margin-top: 7.5px;
+  height: 30px;
+  border: 1px solid #CFCFCF;
+}
+
+.id_icon{
+  user-select: none;
+  margin-top: 10.5px;
+  height: 25px;
+}

@@ -1,0 +1,151 @@
+@media screen and (max-width: 1050px){
+	.resltat_show{
+		width: 800px;
+	}
+
+	.simu_subtitle_1{
+		margin-left: 20px;
+	}
+
+	.result_w{
+		margin-right: 20px;
+	}
+
+	.br_p{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.header_logo{
+		margin-left: 70px;
+	}
+
+	.header_back{
+		margin-right: 70px;
+	}
+}
+
+@media screen and (max-width: 850px){
+
+	.resultat{
+		display: block;
+		text-align: center;
+		padding-top: 5px;
+	}
+
+	.result_w{
+		margin: 30px 0 0 0;
+	}
+
+	.simu_result_price{
+		margin-top: 20px;
+	}
+
+	.simu_result_text, .simu_result_price, .simu_subtitle_1{
+		display: block;
+	}
+
+	.simu_subtitle_1{
+		margin-left: 0;
+	}
+
+	.resltat_show{
+		width: 650px;
+	}
+
+	.resultat_center{
+		min-height: 350px;
+	}
+}
+
+@media screen and (max-width: 700px){
+
+	.resltat_show{
+		width: 90%;
+	}
+
+	.simu_title{
+		font-size: 20px;
+	}
+
+	.simu_subtitle{
+		font-size: 15px;
+	}
+
+	.result_w{
+		width: 250px;
+		height: auto;
+	}
+
+	.simu_result_text{
+		width: 240px;
+	}
+
+	.p{
+		font-size: 14px;
+		width: 95%;
+	}
+
+	.resultat_center{
+		min-height: 370px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.header_logo{
+		margin-left: 20px;
+	}
+
+	.header_back{
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 570px){
+
+	.header_logo{
+		font-size: 30px;
+	}
+
+	.header_title{
+		font-size: 16px;
+	}
+
+	.resultat_center{
+		min-height: 470px;
+	}
+
+	form{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.contact1{
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	.stop{
+		margin: auto;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 450px){
+
+	.header_title{
+		text-align: center;
+	}
+
+	.header_logo{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 370px){
+
+	.resultat_center{
+		min-height: 480px;
+	}
+}

@@ -1,0 +1,5 @@
+État : 
+true
+Checkbox
+3\&12/Trés bon état\&12/Moyen\&12/État passable
+fin

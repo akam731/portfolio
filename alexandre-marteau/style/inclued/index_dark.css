@@ -14,7 +14,7 @@
   background: var(--background-dark);
 }
 
-.index_title_left .title, .index_title_left .title span,.about_text h2,.about_change h3
+.index_title_left .title,.about_contact_hidden .cv-option p, .index_title_left .title span,.about_text h2,.about_change h3
 {
   color: var(--text-dark);
 }

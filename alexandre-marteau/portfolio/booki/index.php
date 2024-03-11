@@ -43,6 +43,12 @@ function lang($msg_fr, $msg_en){
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="icon" type="image/png" sizes="16x16"  href="../../images/favicon.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	
+	<meta name="description" content="Découvrez Alexandre Marteau, développeur web. Des sites uniques qui captivent et inspirent."> 
+	
 	<script src="https://kit.fontawesome.com/7055cf6fe9.js" crossorigin="anonymous"></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -153,13 +159,6 @@ function lang($msg_fr, $msg_en){
 				
 				<p class="desciption section fade"><?php lang("Voici quelques screenshots du site une fois terminé :","Here are a few screenshots of the finished site:");?></p>
 
-				<div class="images_triple section fade ">
-					<img src="">
-					<div>
-						<img>
-						<img src="">
-					</div>
-				</div>
 			</div>
  
 		</div>
@@ -168,11 +167,11 @@ function lang($msg_fr, $msg_en){
 
 	<section class="portfolio_screen">
 		
-		<img onclick="window.open('../../portfolio/booki/screen_1.jpeg', '_blank')" class="img_1 section fade" src="../../portfolio/booki/screen_1.jpeg" alt="Première image de mon projet de site réalisé en HTML et CSS">
+		<img alt="Présentation de la page d'acceuil de mon site pour une agence de voyage." onclick="window.open('../../portfolio/booki/screen_1.jpeg', '_blank')" class="img_1 section fade" src="../../portfolio/booki/screen_1.jpeg" alt="Première image de mon projet de site réalisé en HTML et CSS" title="<?php lang("Agrandir", "View larger"); ?>">
 
-		<img onclick="window.open('../../portfolio/booki/screen_2_1.jpeg', '_blank')" class="img_2_1 section fade" src="../../portfolio/booki/screen_2_1.jpeg" alt="Deuxième image de mon projet de site réalisé en HTML et CSS">
+		<img alt="Première partie de la version responsive de la page d'acceuil de mon site pour une agence de voyage." onclick="window.open('../../portfolio/booki/screen_2_1.jpeg', '_blank')" class="img_2_1 section fade" src="../../portfolio/booki/screen_2_1.jpeg" alt="Deuxième image de mon projet de site réalisé en HTML et CSS" title="<?php lang("Agrandir", "View larger"); ?>">
 
-		<img onclick="window.open('../../portfolio/booki/screen_2_3.jpeg', '_blank')" class="img_2_1 section fade" src="../../portfolio/booki/screen_2_3.jpeg" alt="Troisième image de mon projet de site réalisé en HTML et CSS">
+		<img alt="Deuxième partie de la version responsive de la page d'acceuil de mon site pour une agence de voyage." onclick="window.open('../../portfolio/booki/screen_2_3.jpeg', '_blank')" class="img_2_1 section fade" src="../../portfolio/booki/screen_2_3.jpeg" alt="Troisième image de mon projet de site réalisé en HTML et CSS" title="<?php lang("Agrandir", "View larger"); ?>">
 
 	</section>
 	<br>

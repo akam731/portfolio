@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
-*
+* 
 {
   font-family: "Varela round";
   user-select: none;
@@ -147,6 +147,7 @@ body
 
 .details
 {
+  
 	width: 20%;
 	height: 100%;
 }
@@ -204,6 +205,46 @@ body
   height: 400px;
   width: 100%;
   background: url('../../portfolio/booki/fond.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio_land_elec{
+  margin: 50px 0 0 0;
+  height: 400px;
+  width: 100%;
+  background: url('../../portfolio/elec/fond.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio_land_port{
+  margin: 50px 0 0 0;
+  height: 400px;
+  width: 100%;
+  background: url('../../portfolio/portfolio/fond.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio_land_enchere{
+  margin: 50px 0 0 0;
+  height: 400px;
+  width: 100%;
+  background: url('../../portfolio/enchere/fond.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio_land_expec{
+  margin: 50px 0 0 0;
+  height: 400px;
+  width: 100%;
+  background: url('../../portfolio/expec/fond.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -267,7 +308,17 @@ body
   text-align: center;
 }
 
-.portfolio_screen img:hover
+.portfolio_screen_oncly_1{
+  text-align: center;
+  margin: auto;
+}
+.portfolio_screen_oncly_2{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.portfolio_screen img:hover, .portfolio_screen_oncly_1 img:hover, .portfolio_screen_oncly_2 img:hover
 {
   transform: scale(1.03);
 }
@@ -282,6 +333,18 @@ body
   cursor: pointer;
   margin: 50px 0 0 0;
 }
+
+.img_h_auto{
+  width: 550px;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.42); 
+  box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.42);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 50px 0 0 0;
+}
+
 .img_2_1{
   width: 300px;
   height: 700px;
@@ -293,3 +356,65 @@ body
   cursor: pointer;
 }
 
+.img_full{
+  width: 1200px;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.42); 
+  box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.42);
+  object-fit: fill;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 50px 0 0 0;
+}
+
+.img_min{
+  width: 700px;
+  height: 500px;
+  -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.42); 
+  box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.42);
+  object-fit: fill;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 50px 0 0 0;
+}
+
+.img_min_auto{
+  width: auto;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.42); 
+  box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.42);
+  object-fit: fill;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 50px 0 0 0;
+}
+
+.form_error{
+  margin: 0px auto 20px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_error p{
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+
+.form_success{
+  margin: 0px auto 20px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_success p{
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  color: green;
+  font-weight: bold;
+}

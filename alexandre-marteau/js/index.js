@@ -1,5 +1,8 @@
 //Redirection
     function scrollToSection(sectionId) {
+
+
+
       var section = document.getElementById(sectionId);
 
       if (section) {
@@ -7,13 +10,17 @@
       }
 
     }
-
+ 
 // CV
 document.addEventListener("DOMContentLoaded", function() {
   var mainButton = document.getElementById("about_contact_link");
+  var cv_img = document.getElementById("cv_download");
 
   var hidden = document.getElementById("about_contact_hidden");
 
+  cv_img.addEventListener("click", function() {
+    hidden.style.display = "flex";
+  });
 
   mainButton.addEventListener("click", function() {
     hidden.style.display = "flex";
@@ -21,7 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.addEventListener("click", function(event) {
     if (event.target !== mainButton &&
-        event.target !== hidden) {
+        event.target !== hidden &&
+        event.target !== cv_img) {
       hidden.style.display = "none";
     }
   });
@@ -102,6 +110,9 @@ var tansMax;
 var trans;
 var initialX, initialY;
 var slide = document.getElementById("slideshow");
+var portfolio = document.getElementById("portfolio");
+var about = document.getElementById('about_content');
+var br = document.querySelectorAll("br");
 var mouseDown = false; 
 var mouseOver = false;
 var translateX = 0;
@@ -120,13 +131,19 @@ function handleResize() {
 
 window.addEventListener("resize", handleResize);
 handleResize();
-slide.addEventListener("mouseover",function(event) {
-	mouseOver = true;
-});
-slide.addEventListener("mouseout",function(event) {
-	mouseOver = false;
+about.addEventListener("mouseover",function(event) {
 	mouseDown = false;
 });
+portfolio.addEventListener("mouseover",function(event) {
+	mouseDown = false;
+});
+document.addEventListener("mouseup",function(event) {
+	mouseDown = false;
+});
+document.addEventListener("mouseup",function(event) {
+	mouseDown = false;
+});
+
 slide.addEventListener("mousedown",function(event) {
 	mouseDown = true;
 	initialX = event.clientX;
@@ -145,14 +162,9 @@ slide.addEventListener("mousedown",function(event) {
 	   translateY = matrix.m42;
 	}
 });
-slide.addEventListener("mouseup",function(event) {
-	mouseDown = false;
-});
 
 document.addEventListener('mousemove', function(event) {
-
-	console.log(mouseDown);
-	if (mouseDown && mouseOver) {
+	if (mouseDown) {
 	  // Récupère les coordonnées x et y du curseur de la souris
 	  var mouseX = event.clientX;
 		var mouseY = event.clientY;
@@ -228,6 +240,9 @@ function about_first(color)
 	cursus.style.display = "block";
 	exp.style.display = "none";
 	stage.style.display = "none";
+  setTimeout(function() {cursus.classList.add('active');}, 50);
+	exp.classList.remove('active');
+	stage.classList.remove('active');
 }
 
 function about_second(color)
@@ -236,9 +251,12 @@ function about_second(color)
 	first.style.background = color;
 	third.style.background = color;
 
-	cursus.style.display = "none";
 	exp.style.display = "block";
+	cursus.style.display = "none";
 	stage.style.display = "none";
+  setTimeout(function() {exp.classList.add('active');}, 50);
+	cursus.classList.remove('active');
+	stage.classList.remove('active');
 }
 
 function about_third(color)
@@ -247,9 +265,13 @@ function about_third(color)
 	second.style.background = color;
 	first.style.background = color;
 
-	cursus.style.display = "none";
-	exp.style.display = "none";
+
 	stage.style.display = "block";
+	exp.style.display = "none";
+	cursus.style.display = "none";
+  setTimeout(function() {	stage.classList.add('active');}, 50);
+	cursus.classList.remove('active');
+	exp.classList.remove('active');
 }
 
 
@@ -360,3 +382,4 @@ function redirect(link)
 {
 	 window.location.href = link;
 }
+

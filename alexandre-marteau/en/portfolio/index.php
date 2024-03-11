@@ -23,6 +23,18 @@ if ($_SESSION['portfolio'] == "enchere") {
 }elseif ($_SESSION['portfolio'] == "booki") {
 	
 	require_once("../../portfolio/booki/index.php");
+}elseif ($_SESSION['portfolio'] == "expec") {
+	
+	require_once("../../portfolio/expec/index.php");
+
+}elseif ($_SESSION['portfolio'] == "appPhp") {
+	
+	require_once("../../portfolio/appPHP/index.php");
+
+}else{
+	unset($_SESSION['portfolio']);
+  	header('location:../');
 }
 
 ?>
+<meta name="description" content="Découvrez Alexandre Marteau, développeur web. Des sites uniques qui captivent et inspirent.">

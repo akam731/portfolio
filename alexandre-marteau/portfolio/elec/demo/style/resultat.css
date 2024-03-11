@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	font-family: "varela round";
+	user-select: none;
+}
+
+body{
+	background: #F2F4F5;
+	margin: 0;
+}
+
+.header{
+	display: flex;
+	height: 70px;
+	width: 100%;
+	border-bottom:  1px solid #D5D5D5;
+	background-color: #fff;
+}
+
+.header_logo{
+	margin-left: 250px;
+	font-family: 'Lobster';
+	font-size: 35px;
+	text-decoration: underline;
+	color: #CACACA;
+	margin-top: 10px;
+}
+
+.header_title{
+	font-family: "varela round";
+	font-size: 21px;
+	margin-left: 30px;
+	margin-top: 24.5px;
+}
+
+.header_back, .header_back:active{
+	margin-top: 15px;
+	display: block;
+	height: 20px;
+	padding: 10px;
+	font-family: "varela round";
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: 200px;
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s ease-out;
+}
+
+.header_back:hover{
+	background-color: black;
+	color: #fff;
+}
+
+.simu_title{
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	color: #3E416D;
+	display: inline-block;
+}
+
+.simu_subtitle{
+	display: inline-block;
+	font-weight: normal;
+	text-align: center;
+	color: #29303B;
+}
+
+.simu_subtitle_1{
+	display: inline-block;
+	font-weight: normal;
+	text-align: center;
+	color: #29303B;
+	height: 20px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+.simu_result_price{
+	color: #00a9e0;
+	font-weight: normal;
+	text-align: center;
+	height: 20px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.simu_result_text{
+	display: inline-block;
+	color: #00a9e0;
+	font-weight: normal;
+	text-align: center;
+	height: auto;
+	min-height: 20px;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.result_w{
+	margin-left: auto;
+	margin-right: 40px;
+	display: inline-block;
+	height: 40px;
+	width: 400px;
+	background: #fff;
+	margin-top: 30px;
+}
+
+.contact1{
+	width: 170px;
+	display: block;
+	margin-left: auto;
+	margin-right: 20px;
+	color: #fff;
+	height: 40px;
+	background: #00a9e0;
+	cursor: pointer;
+	border: 1px solid #00a9e0;
+}
+
+.contact1:hover{
+	color: #00a9e0;
+	background: #fff;
+}
+
+.p{
+	text-align: center;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.stop{
+	color: #00a9e0;
+	border: 1px solid #00a9e0;
+	background: transparent;
+	display: block;
+	margin-right: auto;
+	margin-left: 20px;
+	cursor: pointer;
+	font-size: 15px;
+	border-radius: 5px;
+	height: 35px;
+	width: 120px;
+}
+.stop:hover{
+	color: #fff;
+	background: #00a9e0;
+}
+
+.resltat_show{
+	height: auto;
+	width: 1000px;
+	margin: auto;
+}
+
+.resultat_center{
+	width: 100%;
+	height: auto;
+	min-height: 270px;
+	background: #fff;
+}
+
+.resultat{
+	display: flex;
+	width: 95%;
+	height: auto;
+	min-height: 100px;
+	margin: auto;
+	background-color: #A7E8EF;
+}
+
+.contact_h3_{
+	display: block;
+	font-weight: normal;
+	text-align: center;
+	color: #29303B;
+	height: 20px;
+	margin-top: 40px;
+}
+.acceuil{
+	width: 170px;
+	display: block;
+	margin: auto;
+	color: #fff;
+	height: 40px;
+	background: #00a9e0;
+	cursor: pointer;
+	border: 1px solid #00a9e0;
+}
+
+.acceuil:hover{
+	color: #00a9e0;
+	background: #fff;
+}

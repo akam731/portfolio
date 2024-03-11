@@ -1,0 +1,258 @@
+@media screen and (max-width: 1300px){
+	.detail div{
+		width: 20%;
+	}
+
+	.detail div p{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1200px){
+
+	.simu_text img{
+		height: 300px;
+		width: 400px;
+	}
+
+	.simu_text div{
+		margin-top: 10px;
+	}
+
+	.simu_text div h3{
+		font-size: 22px;
+	}
+
+}
+
+@media screen and (max-width: 1130px){
+	.detail div{
+		width: 18%;
+	}
+
+	.detail div p{
+		display: block;
+		margin: auto;
+		margin-top: 20px;
+		width: 80%;
+		font-size: 14px;
+	}
+
+	.simu_text .img_top{
+		margin-left: 50px;
+	}
+
+	.simu_text .img_bottom{
+		margin-right: 50px;
+	}
+}
+
+@media screen and (max-width: 1050px){
+	
+	.simu_text div{
+		width: 400px;
+		font-size: 15px;
+	}
+
+	.simu_text div h3{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 970px){
+	
+	.simu_text img{
+		height: 300px;
+		width: 400px;
+	}		
+}
+
+@media screen and (max-width: 950px){
+	.simu_text{
+		display: block;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin: 0;
+	}
+
+	.simu_text img{
+		margin: 0;
+	}
+
+	.simu_text div{
+		width: 500px;
+		margin: 0;
+		margin: auto;
+		margin-bottom: 0;
+		margin-top: 50px;
+		text-align: center;
+		height: auto;
+		font-size: 16px;
+	}
+
+	.simu_text div h3{
+		margin: 0;
+	}
+
+	.simu_text .img_bottom,.simu_text .img_top{
+		margin: auto;
+	}
+
+	.simu_text_bottom{
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin: 0;
+		margin-top: 50px;
+	}
+
+	.brsimu_text{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.object_select .object_select_flex{
+		display: grid;
+		grid-template-columns: 1fr;
+		height: auto;
+	}
+
+	.object_select_washing{
+		width: 100%;
+		height: 350px;
+	}
+
+	.object_select_soon{
+		width: 100%;
+		height: 350px;
+	}
+
+	.object_select h1{
+		font-size: 20px;
+	}
+
+	.object_select h3{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.detail{
+		margin-top: 400px;
+		height: 450px;
+		display: grid;
+		grid-template-columns:  30px 1fr 30px 1fr  30px;
+		grid-template-rows: 200px 200px;
+	}
+
+	.detail_1{
+		grid-row-start: 1;
+		grid-column-start: 2;
+	}
+
+	.detail_2{
+		grid-row-start: 1;
+		grid-column-start: 4;
+	}
+
+	.detail_3{
+		grid-row-start: 2;
+		grid-column-start: 2;
+	}
+
+	.detail_4{
+		grid-row-start: 2;
+		grid-column-start: 4;
+	}
+
+	.detail div{
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	.detail p{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 670px){
+	.object_select h1{
+		font-size: 18px;
+	}
+
+	.object_select h3{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.detail{
+		padding-top: 10px;
+		display: block;
+		height: 750px;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.object_select h1{
+		font-size: 17px;
+	}
+
+	.object_select h3{
+		font-size: 16px;
+	}
+
+	.simu_text div{
+		width: 400px;
+	}
+
+	.simu_text img{
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 501px){
+	.object_select h1{
+		font-size: 19px;
+	}
+
+	.object_select h3{
+		font-size: 14px;
+	}
+
+	.simu_text div{
+		width: 80%;
+	}
+	
+	.simu_text img{
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	.detail{
+		margin-top: 450px;
+	}
+}
+
+@media screen and (max-width: 350px){
+
+	.object_select, .object_select .object_select_flex, .object_select_washing, .object_select_soon{
+		width: 100%;
+	}
+
+	.object_select h1{
+		margin-left: 15px;
+		font-size: 16px;
+	}
+
+	.object_select h3{
+		margin-left: 15px;
+		font-size: 14px;
+	}
+}

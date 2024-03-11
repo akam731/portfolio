@@ -22,6 +22,34 @@ body
   width: 100%;
   height: 100%;
 }
+.form_error{
+  margin: 0px auto 20px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_error p{
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+.form_success{
+  margin: 0px auto 20px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_success p{
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  color: green;
+  font-weight: bold;
+}
 
 .about1
 {
@@ -151,6 +179,9 @@ body
 .index_title_right .img_profile
 {
   height: 100%;
+  width: 100%;
+  border-radius: 500%;
+  object-fit: cover;
 }
 
 .header_scroller {
@@ -303,18 +334,18 @@ body
     margin: 100px 0 0 0;
     width: 100%;
     height: 550px;
-    background: ;
  }
 
 .about_content
 {
   display: flex;
+    position: relative;
 }
 
 .about_img {
   width: 50%;
   text-align: center;
-}
+} 
 
 .about_img img{
   display: inline-block;
@@ -322,7 +353,16 @@ body
   background: #333333;
   width: 400px;
   height: 100%;
+  transition: filter .3s linear;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 0px 31px 6px rgba(0,0,0,0.18); 
+box-shadow: 5px 0px 31px 6px rgba(0,0,0,0.18);
 }
+
+.about_img img:hover {
+    filter: brightness(60%);
+}
+
 
 .about_text
 {
@@ -330,7 +370,7 @@ body
 }
 
 .about_text h2
-{
+{ 
   margin: 0 0 10px 0 ;
   font-size: 55px;
   font-family: "Space Grotesk";
@@ -340,17 +380,17 @@ body
   display: block;
   height: 320px;
   width: 100%;
-  background: ;
 }
 
-#exp
+.cursus
 {
   display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
-
-#stage
-{
-  display: none;
+.cursus.active{
+  display: block;
+    opacity: 1;
 }
 
 .about_change h3{
@@ -491,7 +531,7 @@ body
   position: relative;
   z-index: 1;
   transition: all 0.5s ease;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0;
   border-radius: 10px;
 }
 
@@ -533,6 +573,12 @@ body
 {
   left: 0;
 }
+
+.about_contact_logo_big_font{
+  font-size: 20px;
+}
+
+
 
 .about_contact .about_contact_link:hover
 {

@@ -1,0 +1,6 @@
+php_value display_errors On
+php_value mbstring.http_input auto
+php_value date.timezone Europe/Paris
+<IfModule mod_php7.c>
+    php_value open_basedir "/home/vol2_8/infinityfree.com/if0_35852107/alex-marteau.com/htdocs:/home/vol2_8/infinityfree.com/if0_35852107/alex-marteau.com/htdocs/inclued/PHPMailer/language"
+</IfModule>

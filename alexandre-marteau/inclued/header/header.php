@@ -14,17 +14,17 @@
 
 
     	if ($_SESSION['color_mode'] == "default") {
-    		echo "logo.png"; 
+    		echo "logo_icon.png"; 
 
     	}else{
-    		echo "logo_dark.png"; 
+    		echo "logo_icon_dark.png"; 
     	} ?>"class="header_nav_logo">
 
   	<div id="header_nav_a" class="header_nav_a nav_hidden">
-	    <a onclick="scrollToSection('body');"><?php lang("Accueil", "Home"); ?></a>
-	    <a onclick="scrollToSection('header_scroller');"><?php lang("À propos", "About me"); ?></a>
-	    <a onclick="scrollToSection('link_portfolio')">Portfolio</a>
-	    <a onclick="scrollToSection('link_contact')">Contact</a>
+	    <a class="header_nav_a_link" onclick="scrollToSection('body');"><?php lang("Accueil", "Home"); ?></a>
+        <a class="header_nav_a_link" onclick="scrollToSection('header_scroller');"><?php lang("À propos", "About me"); ?></a>
+        <a class="header_nav_a_link" onclick="scrollToSection('link_portfolio')">Portfolio</a>
+        <a class="header_nav_a_link" onclick="scrollToSection('link_contact')">Contact</a>
 
 
 

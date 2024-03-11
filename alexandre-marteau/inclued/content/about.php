@@ -1,6 +1,6 @@
 <div class="about_change" id="about_change">
 
-	<div id="cursus" class="cursus">
+	<div id="cursus" class="cursus active">
 		<h3><?php lang("Mon parcours scolaire","My school cursus") ?></h3>
 		<p>
 				<?php

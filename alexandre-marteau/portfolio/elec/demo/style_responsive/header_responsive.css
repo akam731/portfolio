@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+@media screen and (max-width: 1120px){
+	.nav .a, .nav .select{
+		font-size: 17px;
+	}
+
+	header img{
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 1040px){
+	.nav .a, .nav .select{
+		margin: 15px;
+	}
+}
+
+@media screen and (max-width: 850px){
+	.nav .a, .nav .select{
+		margin: 10px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.nav .a, .nav .select{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 615px){
+	.nav .a, .nav .select{
+		font-size: 11x;
+	}
+
+	.reprise_2{
+		display: inline;
+	}
+
+	.reprise_1{
+		display: none;
+	}
+
+	header img{
+		height: 70px;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	.toggle{
+		top: 25px;
+		right: 20px;
+		display: flex;
+		align-items: center;
+		width: 35px;
+		height: 50px;
+		position: absolute;
+	}
+
+	.toggle span, .toggle span:after, .toggle span:before{
+		content: "";
+		display: block;
+		height: 2px;
+		width: 100%;
+		background-color: #024033;
+		position: relative;
+		transition: all 0.3s;
+	}
+
+	.toggle span:before{
+		top: 12px;
+	}
+
+	.toggle span:after{
+		top: -14px;
+	}
+
+	.toggle span:after:active{
+		top: 0;
+	}
+
+	.active span:before, .active span:after{
+		top: 0;
+	}
+
+	.nav{
+		display: none;
+		margin-top: 0;
+		position: absolute;
+		transition: all 0.3s;
+		right: -300px;
+	}
+
+	.nav .a{
+		margin:0;
+		margin-top: 20px;
+		font-size: 20px;
+	}
+	.nav .select{
+		padding-bottom: 0;
+		border-bottom: 0;
+		margin:0;
+		margin-top: 20px;
+		font-size: 20px;
+	}
+
+	.active_nav{
+		transition: all 0.3s;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		z-index: 2;
+		background: #fff;
+		margin-top: 0;
+		right: 0;
+		height: 310px;
+		width: 200px;
+		-webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.33); 
+		box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.33);
+	}
+}
