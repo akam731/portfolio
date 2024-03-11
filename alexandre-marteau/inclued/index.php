@@ -223,7 +223,7 @@ if (isset($_GET['target']) AND !empty($_GET['target'])) {
 
                     <a href="https://www.instagram.com/alexandre_marteau/"  target="about_blank" id="about_contact_logo_portfolio_footer" class="about_contact_logo_portfolio about_contact_logo_big_font" ><i class="fa-brands fa-instagram"></i></a>
 
-					<a href="mailto:alexandre.marteau63@gmail.com" class="about_contact_logo about_contact_logo_righ about_contact_logo_big_font" id=""><i class="fa-regular fa-envelope"></i></a>
+					<a href="mailto:alexandre.marteau63@gmail.com" class="about_contact_logo about_contact_logo_right about_contact_logo_big_font" id=""><i class="fa-regular fa-envelope"></i></a>
 				</div>
 
 			</div>
